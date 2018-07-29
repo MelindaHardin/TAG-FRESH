@@ -8,25 +8,29 @@
     padding: 30px;
     
 }
-
-#about{
-    margin-top: 150px;
-
+.navbar-top{
+    background-color:black;
 }
 
-#mixes{
-    margin-top: 150px;
+#tag{
+    font-weight: 400;
+    color: black;
+    padding-top: 80px;
 }
 
-#contact{
-    margin-top: 150px;
+#about, #mixes, #contact{
+    margin-top: 180px;
+    
+  
 }
 
 body {
     background-image: url("../images/logoBlack.png");
+    background-attachment: fixed;
     background-position: center;
     background-size: contain;
     background-repeat: repeat-y;
+    background-color: black;
 }
 .display-4 {
     font-size: 35px;
