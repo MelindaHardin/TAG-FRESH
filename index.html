@@ -14,6 +14,7 @@
     crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="shortcut icon" href="assets/images/logoXsmall.png" type="image/x-icon">
+  <script src="assets/main.js"></script>
   <title>TAG-FRESH </title>
 </head>
 
@@ -78,79 +79,39 @@
   <div class="jumbotron jumbotron-fluid" id="mixes">
     <div class="container">
       <h3 class="display-4">Mixes</h3>
-      <div class="card-columns">
-        <div class="card">
-          <img class="card-img-top" src="assets/images/needle.jpg" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title that wraps to a new line</h5>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is
-              a little bit longer.</p>
-          </div>
+      <br>
+      <div class="row">
+        <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="assets/images/needle.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Album Name</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">View songs</a>
+              </div>
+            </div>
         </div>
-        <div class="card p-3">
-          <blockquote class="blockquote mb-0 card-body">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-            <footer class="blockquote-footer">
-              <small class="text-muted">
-                Someone famous in
-                <cite title="Source Title">Source Title</cite>
-              </small>
-            </footer>
-          </blockquote>
+
+        <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="assets/images/needle.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Album Name</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">View songs</a>
+              </div>
+            </div>
         </div>
-        <div class="card">
-          <img class="card-img-top" src="assets/images/needle.jpg" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-            <p class="card-text">
-              <small class="text-muted">Last updated 3 mins ago</small>
-            </p>
-          </div>
-        </div>
-        <div class="card bg-primary text-white text-center p-3">
-          <blockquote class="blockquote mb-0">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
-            <footer class="blockquote-footer">
-              <small>
-                Someone famous in
-                <cite title="Source Title">Source Title</cite>
-              </small>
-            </footer>
-          </blockquote>
-        </div>
-        <div class="card text-center">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This card has a regular title and short paragraphy of text below it.</p>
-            <p class="card-text">
-              <small class="text-muted">Last updated 3 mins ago</small>
-            </p>
-          </div>
-        </div>
-        <div class="card">
-          <img class="card-img" src="assets/images/needle.jpg" alt="Card image">
-        </div>
-        <div class="card p-3 text-right">
-          <blockquote class="blockquote mb-0">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-            <footer class="blockquote-footer">
-              <small class="text-muted">
-                Someone famous in
-                <cite title="Source Title">Source Title</cite>
-              </small>
-            </footer>
-          </blockquote>
-        </div>
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is another card with title and supporting text below. This card has some additional content to make it slightly
-              taller overall.</p>
-            <p class="card-text">
-              <small class="text-muted">Last updated 3 mins ago</small>
-            </p>
-          </div>
+
+        <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="assets/images/needle.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Album Name</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">View songs</a>
+              </div>
+            </div>
         </div>
       </div>
     </div>
@@ -163,7 +124,7 @@
       <form>
         <div class="form-group">
           <label for="exampleFormControlInput1">Name</label>
-          <input type="txt" class="form-control" id="exampleFormControlInput1" placeholder="Name">
+          <input type="txt" class="form-control" id="exampleFormControlInput1">
         </div>
 
         <div class="form-group">
@@ -191,6 +152,10 @@
       <i class="fab fa-facebook-square"></i>
       <i class="fab fa-twitter-square"></i>
       <i class="fab fa-instagram"></i>
+      <br>
+      <div id="stamp">
+      2018&copy website created by <img id="wadesite" src="assets/images/SmallLogo.png">
+    </div>
     </nav>
   </footer>
 
@@ -247,38 +212,6 @@
   </div>
 
 
-  <script>
-    // Example starter JavaScript for disabling form submissions if there are invalid fields
-    (function () {
-      'use strict';
-      window.addEventListener('load', function () {
-        // Fetch all the forms we want to apply custom Bootstrap validation styles to
-        var forms = document.getElementsByClassName('needs-validation');
-        // Loop over them and prevent submission
-        var validation = Array.prototype.filter.call(forms, function (form) {
-          form.addEventListener('submit', function (event) {
-            if (form.checkValidity() === false) {
-              event.preventDefault();
-              event.stopPropagation();
-            }
-            form.classList.add('was-validated');
-          }, false);
-        });
-      }, false);
-    })();
-
-    //MODAL
-    $('#bookModal').on('show.bs.modal', function (event) {
-      var button = $(event.relatedTarget) // Button that triggered the modal
-      var recipient = button.data('whatever') // Extract info from data-* attributes
-      // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
-      // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
-      var modal = $(this)
-      modal.find('.modal-title').text('New message to ' + recipient)
-      modal.find('.modal-body input').val(recipient)
-    })
-  </script>
-
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -288,5 +221,4 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
     crossorigin="anonymous"></script>
 </body>
-
 </html>

@@ -19,9 +19,15 @@
 }
 
 #about, #mixes, #contact{
-    margin-top: 180px;
-    
-  
+    margin-top: 180px;       
+}
+
+#wadesite{
+    height: 70px;
+    width: 120px;
+}
+#stamp{
+    text-align: center;
 }
 
 body {
@@ -37,7 +43,6 @@ body {
 }
 
 .card:hover{
-    opacity: 0.6;
     cursor: pointer;
 }
 
